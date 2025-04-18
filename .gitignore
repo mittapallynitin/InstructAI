@@ -1,0 +1,7 @@
+# Ignore all files in the distilgpt2-alpaca directory
+distilgpt2-alpaca/*
+
+#Ignore hidden and workspace files
+.DS_Store
+*.sublime-workspace
+.vscode/
