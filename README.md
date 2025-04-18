@@ -5,6 +5,25 @@ Research Paper: Training language models to follow instructions with human feedb
 Publisher: OpenAI (2022)
 ```
 
+## 🚀 Project Highlights ( TLDR; )
+
+- 🔧 Full fine-tuning of DistilGPT2 using Hugging Face `Trainer`
+- 🦙 Instruction tuning with the Alpaca dataset
+- 🧠 Inspired by the InstructAI from OpenAI
+- ⚙️ Ready for training on GPU or Apple M1/M2 with MPS support
+- 📦 Clean modular code with dataset handling, training, and inference
+
+## Project Structure
+```
+InstructAI                                            
+├─  datasetup.py  
+├─  inference.py  
+├─  model.py                                        
+├─  train.py
+├─  distilgpt2-alpaca
+│     └─ model savepoints...
+```
+
 ## Introduction
 
 In recent years, large language models (LLMs) have achieved remarkable capabilities, but they often fail to follow user instructions reliably. OpenAI’s InstructGPT paper introduced a powerful solution: instruction tuning with human feedback. In this project, I will implement the first stage of that process — instruction fine-tuning — on a compact model: DistilGPT2
@@ -23,7 +42,6 @@ In recent years, large language models (LLMs) have achieved remarkable capabilit
 ## What Is Instruction Tuning? ✽
 
 Instruction tuning teaches a language model to better understand and execute user instructions. Instead of continuing arbitrary text, the model learns to respond to prompts and maintain conversation instead of statistically completing the prompt. 
-
 
 
 ## Model Choice: Why DistilGPT2? 𝌭
@@ -63,8 +81,8 @@ The beach glowed golden in the setting sun.
 **Stack**
 
 ```
-    • Huggingface🤗 Datasets
-    • Huggingface🤗 Transformers & Trainer
+    • Huggingface 🤗 Datasets
+    • Huggingface 🤗 Transformers & Trainer
     • PyTorch
     • DistilGPT2
     • Alpaca dataset
