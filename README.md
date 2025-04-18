@@ -93,6 +93,8 @@ Minimize cross-entropy loss over input sequences.
 
 ## Inference Results
 
+After training, the fine-tuned model can be used to generate responses to instruction-style prompts. Simply load the saved model and tokenizer, provide a prompt following the Alpaca format, and generate a response. You can also compare the outputs of the base distilgpt2 model with the fine-tuned version to observe improvements in instruction following and coherence.
+
 ```
 ====================
 
